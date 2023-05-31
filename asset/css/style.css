@@ -394,7 +394,7 @@ a.btn__children.active::after {
 }
 
 .project__showcontent .child .img__project {
-    height: 100%;
+    width: 100%;
 }
 
 .project__showcontent .content__project {
