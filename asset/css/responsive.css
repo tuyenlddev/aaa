@@ -12,10 +12,10 @@
         margin-left: 200px;
     }
     .home__content {
-        width: 100%;
+
     }
     .home__content--left {
-        /* margin-left: 64px; */
+        margin-left: 64px;
     }
     .experience__content {
         width: 100%;
@@ -35,7 +35,7 @@
     }
     .specialties {
         width: 100%;
-        padding: 0 64px;
+        padding: 200px 64px 0;
     }
     .specialties .title {
         font-size: 32px;
@@ -58,7 +58,7 @@
 
     .contact {
         width: 100%;
-        padding: 80px 64px;
+        padding: 160px 64px 0;
     }
     .contact .contact__me {
         font-size: 32px;
@@ -85,6 +85,16 @@
         max-width: 32px;
     }
 
+}
+
+@media only screen and (max-width: 1024px) {
+    #experience {
+        padding-top: 40px !important;
+    }
+    
+    .specialties, .recent__project, .contact  {
+        padding-top: 120px !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -219,7 +229,7 @@
     }
 
     .recent__project {
-        padding: 120px 16px 100px;
+        padding: 0 16px;
     }
     .project__showcontent .child {
         width: 100%;
