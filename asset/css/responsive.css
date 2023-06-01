@@ -261,6 +261,10 @@
     }
     .infor__descrip .infor__descrip--child:not(:last-child) {
         margin-bottom: 24px;
+        margin-right: 0;
+    }
+    .infor__descrip .infor__descrip--child:last-child {
+        margin-left: 0;
     }
 
 }
