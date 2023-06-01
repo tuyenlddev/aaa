@@ -15,7 +15,7 @@
         width: 100%;
     }
     .home__content--left {
-        margin-left: 64px;
+        /* margin-left: 64px; */
     }
     .experience__content {
         width: 100%;
@@ -246,8 +246,8 @@
         flex-direction: column;
     }
     .infor__contact .infor__contact--chill {
-        width: 100%;
         transform: translateX(15%);
+        
     }
     .infor__descrip .infor__descrip--child:not(:last-child) {
         margin-bottom: 24px;
