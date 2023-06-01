@@ -162,10 +162,6 @@ a.btn__children.active::after {
     flex-basis: 1;
 }
 
-#experience {
-    padding: 120px 0 0 0;
-}
-
 .experience__content {
     background: linear-gradient(108.24deg, #551543 0%, #333333 100%);
     padding: 115px 56px 115px 80px;
@@ -204,7 +200,7 @@ a.btn__children.active::after {
 
 .specialties {
     width: 95%;
-    padding: 200px 56px 10px 80px;
+    padding: 120px 56px 0px 80px;
 
 }
 
@@ -373,7 +369,7 @@ a.btn__children.active::after {
 /* recent__project */
 
 .recent__project {
-    padding: 200px 56px 0px 80px;
+    padding: 120px 56px 0px 80px;
     width: 95%;
 }
 
@@ -407,7 +403,7 @@ a.btn__children.active::after {
 /* Contact */
 
 .contact {
-    padding: 180px 0 60px 115px;
+    padding: 120px 0px 60px 80px;
     width: 95%;
     height: 102vh;
 }
