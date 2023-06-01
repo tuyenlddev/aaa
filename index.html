@@ -32,33 +32,31 @@
             </ul>
         </div>
         <script>
-            // Lắng nghe sự kiện cuộn trang
-            window.addEventListener('scroll', function () {
-                // Lấy vị trí cuộn hiện tại của trang
-                var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            // Lắng nghe sự kiện cuộn chuột
+            window.addEventListener('scroll', function() {
+            // Lấy danh sách các thẻ <a> trong menu
+            const menuItems = document.querySelectorAll('.nav--top .btn__children');
 
-                // Lặp qua các section trong menu
-                var sections = document.querySelectorAll('.nav--top .btn__children');
-                for (var i = 0; i < sections.length; i++) {
-                    var section = sections[i];
-                    var targetId = section.getAttribute('href');
+            // Lặp qua từng thẻ <a> trong menu
+            menuItems.forEach(function(item) {
+                // Lấy giá trị href của thẻ <a> và loại bỏ dấu "#"
+                const target = item.getAttribute('href').slice(1);
+                // Lấy phần tử có id tương ứng với giá trị href
+                const section = document.getElementById(target);
 
-                    // Lấy vị trí của section
-                    var targetElement = document.querySelector(targetId);
-                    var sectionPosition = targetElement.offsetTop;
+                // Kiểm tra nếu section hiện tại trong tầm nhìn
+                if (section.getBoundingClientRect().top <= window.innerHeight / 2) {
+                // Xóa tất cả các class "active" trong menu
+                menuItems.forEach(function(menuItem) {
+                    menuItem.classList.remove('active');
+                });
 
-                    // Kiểm tra nếu section hiện tại nằm trong vùng hiển thị
-                    if (scrollPosition >= sectionPosition) {
-                        // Xóa class "active" trong tất cả các liên kết
-                        sections.forEach(function (link) {
-                            link.classList.remove('active');
-                        });
-
-                        // Thêm class "active" cho liên kết của section hiện tại
-                        section.classList.add('active');
-                    }
+                // Thêm class "active" cho thẻ <a> tương ứng
+                item.classList.add('active');
                 }
             });
+            });
+
         </script>
         <div class="nav--bottom">
             <a href="https://www.instagram.com/neyut.ld_99/"><img src="/asset/icon/Instagram.svg" alt="" class="mg-20"></a>

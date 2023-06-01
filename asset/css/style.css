@@ -107,9 +107,6 @@ a.btn__children.active::after {
     background-color: white;
 }
 
-
-
-
 .main__content {
     margin-left: var(--nav-width--);
 }
@@ -207,7 +204,7 @@ a.btn__children.active::after {
 
 .specialties {
     width: 95%;
-    padding: 200px 56px 0px 80px;
+    padding: 200px 56px 10px 80px;
 
 }
 
