@@ -242,8 +242,7 @@
     }
     .infor__contact .infor__contact--chill {
         width: 100%;
-        justify-content: center;
-        transform: translateX(-15%);
+        transform: translateX(15%);
     }
     .infor__descrip .infor__descrip--child:not(:last-child) {
         margin-bottom: 24px;
