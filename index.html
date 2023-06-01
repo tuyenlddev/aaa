@@ -33,33 +33,34 @@
         </div>
         <script>
             // Lắng nghe sự kiện cuộn chuột
-            window.addEventListener('scroll', function() {
-            // Lấy danh sách các thẻ <a> trong menu
-            const menuItems = document.querySelectorAll('.nav--top .btn__children');
+            window.addEventListener('scroll', function () {
+                // Lấy danh sách các thẻ <a> trong menu
+                const menuItems = document.querySelectorAll('.nav--top .btn__children');
 
-            // Lặp qua từng thẻ <a> trong menu
-            menuItems.forEach(function(item) {
-                // Lấy giá trị href của thẻ <a> và loại bỏ dấu "#"
-                const target = item.getAttribute('href').slice(1);
-                // Lấy phần tử có id tương ứng với giá trị href
-                const section = document.getElementById(target);
+                // Lặp qua từng thẻ <a> trong menu
+                menuItems.forEach(function (item) {
+                    // Lấy giá trị href của thẻ <a> và loại bỏ dấu "#"
+                    const target = item.getAttribute('href').slice(1);
+                    // Lấy phần tử có id tương ứng với giá trị href
+                    const section = document.getElementById(target);
 
-                // Kiểm tra nếu section hiện tại trong tầm nhìn
-                if (section.getBoundingClientRect().top <= window.innerHeight / 2) {
-                // Xóa tất cả các class "active" trong menu
-                menuItems.forEach(function(menuItem) {
-                    menuItem.classList.remove('active');
+                    // Kiểm tra nếu section hiện tại trong tầm nhìn
+                    if (section.getBoundingClientRect().top <= window.innerHeight / 2) {
+                        // Xóa tất cả các class "active" trong menu
+                        menuItems.forEach(function (menuItem) {
+                            menuItem.classList.remove('active');
+                        });
+
+                        // Thêm class "active" cho thẻ <a> tương ứng
+                        item.classList.add('active');
+                    }
                 });
-
-                // Thêm class "active" cho thẻ <a> tương ứng
-                item.classList.add('active');
-                }
-            });
             });
 
         </script>
         <div class="nav--bottom">
-            <a href="https://www.instagram.com/neyut.ld_99/"><img src="/asset/icon/Instagram.svg" alt="" class="mg-20"></a>
+            <a href="https://www.instagram.com/neyut.ld_99/"><img src="/asset/icon/Instagram.svg" alt=""
+                    class="mg-20"></a>
             <a href="https://www.facebook.com/tuyen.liam"><img src="/asset/icon/Facebook.svg" alt="" class="mg-20"></a>
             <div class="line"></div>
         </div>
@@ -86,11 +87,14 @@
                         Digital Marketing <span class="font-normal fw-500">base in</span> Vietnam
                     </div>
                     <button class="button__contact fs-18s mg-64">
-                        <a target="_blank" href="https://www.facebook.com/tuyen.liam/">Let's talk with me</a><img src="/asset/icon/icon-button.svg" alt="">
+                        <a target="_blank" href="https://www.facebook.com/tuyen.liam/">Let's talk with me</a><img
+                            src="/asset/icon/icon-button.svg" alt="">
                     </button>
                     <ul class="icon__contact fs-18s fw-700 font-italic">
-                        <li class="phone"><img class="icon" src="/asset/icon/phone.svg" alt=""><a href="tel:0388983056">+038 898 3056</a></li>
-                        <li class="email"><img class="icon" src="/asset/icon/email.svg" alt=""><a href="mailto:tuyenld.dev@gmail.com">tuyenld.dev@gmail.com</a>
+                        <li class="phone"><img class="icon" src="/asset/icon/phone.svg" alt=""><a
+                                href="tel:0388983056">+038 898 3056</a></li>
+                        <li class="email"><img class="icon" src="/asset/icon/email.svg" alt=""><a
+                                href="mailto:tuyenld.dev@gmail.com">tuyenld.dev@gmail.com</a>
                         </li>
                     </ul>
                 </div>
@@ -112,7 +116,8 @@
                         I am a Digital Marketer, and I'm very passionate and dedicated to my work.
                     </p>
                     <button class="button__contact fs-18s">
-                        <a target="_blank" href="https://www.facebook.com/tuyen.liam/">Contact me</a><img src="/asset/icon/icon-button.svg" alt="">
+                        <a target="_blank" href="https://www.facebook.com/tuyen.liam/">Contact me</a><img
+                            src="/asset/icon/icon-button.svg" alt="">
                     </button>
                 </div>
 
@@ -362,7 +367,8 @@
                     </div>
                 </div>
                 <button class="button__contact fs-18s center">
-                    <a target="_blank" href="https://www.facebook.com/tuyen.liam/">Contact me</a><img src="/asset/icon/icon-button.svg" alt="">
+                    <a target="_blank" href="https://www.facebook.com/tuyen.liam/">Contact me</a><img
+                        src="/asset/icon/icon-button.svg" alt="">
                 </button>
             </div>
         </section>
@@ -381,30 +387,34 @@
                             Digital Marketing <span class="font-normal fw-500">base in</span> Vietnam
                         </div>
                         <button class="contact__downloadCV fs-18s center fw-500">
-                            <a target="_blank" href="https://www.facebook.com/tuyen.liam/">Contact me</a><img src="/asset/icon/icon-download-cv.svg" alt="">
+                            <a target="_blank" href="https://www.facebook.com/tuyen.liam/">Contact me</a><img
+                                src="/asset/icon/icon-download-cv.svg" alt="">
                         </button>
                     </div>
                     <div class="contact__content--right">
                         <div class="infor__contact">
                             <div class="infor__contact--chill mg-24">
-                                <img src="/asset/icon/icon-phone.svg" alt="" class="icon">
-                                <a href="tel:0388983056" class="fs-18s fw-700 font-italic content__infor">038 898 3056</a>
+                                <img src="/asset/icon/icon-local.svg" alt="" class="icon">
+                                <p class="fs-18s fw-700 font-italic content__infor">Danang, Vietnam</p>
                             </div>
                             <div class="infor__contact--chill mg-24">
                                 <img src="/asset/icon/icon-age.svg" alt="" class="icon">
                                 <p class="fs-18s fw-700 font-italic content__infor">24 yrs</p>
                             </div>
+
                             <div class="infor__contact--chill mg-24">
-                                <img src="/asset/icon/email.svg" alt="" class="icon">
-                                <a href="mailto:tuyenld.dev@gmail.com" class="fs-18s fw-700 font-italic content__infor">tuyenld.dev@gmail.com</a>
+                                <img src="/asset/icon/icon-phone.svg" alt="" class="icon">
+                                <a href="tel:0388983056" class="fs-18s fw-700 font-italic content__infor">038 898
+                                    3056</a>
                             </div>
                             <div class="infor__contact--chill mg-24">
-                                <img src="/asset/icon/icon-local.svg" alt="" class="icon">
-                                <p class="fs-18s fw-700 font-italic content__infor">Danang, Vietnam</p>
+                                <img src="/asset/icon/icon-email.svg" alt="" class="icon">
+                                <a href="mailto:tuyenld.dev@gmail.com"
+                                    class="fs-18s fw-700 font-italic content__infor">tuyenld.dev@gmail.com</a>
                             </div>
+
                             <div class="infor__contact--line mg-48"></div>
                         </div>
-
                         <div class="infor__descrip mg-64">
                             <div class="infor__descrip--child">
                                 <div class="mg-20 year">
@@ -412,7 +422,8 @@
                                     <p class="fs-18s fw-700 font-italic">Years <br> experience...</p>
                                 </div>
                                 <p class="fs-18s">
-                                    I have over 3 years of experience in digital marketing, focusing on online advertising campaigns, SEO, content management and development.
+                                    I have over 3 years of experience in digital marketing, focusing on online
+                                    advertising campaigns, SEO, content management and development.
                                 </p>
                             </div>
                             <div class="infor__descrip--child">
@@ -421,14 +432,17 @@
                                     <p class="fs-18s fw-700 font-italic">Clients <br> Worldwide...</p>
                                 </div>
                                 <p class="fs-18s">
-                                    I have succeeded in developing and implementing effective Digital Marketing campaigns, creating interaction and growth for more than 6 different brands in promotional projects.
+                                    I have succeeded in developing and implementing effective Digital Marketing
+                                    campaigns, creating interaction and growth for more than 6 different brands in
+                                    promotional projects.
                                 </p>
                             </div>
 
                         </div>
                         <div class="infor__quotes">
                             <img src="/asset/icon/icon-quotes.svg" class="icon" alt="">
-                            <p class="quotes color-white fs-20s fw-600 font-italic">“Unlocking the endless potential of your brand through Digital Marketing is the key to outstanding success.”</p>
+                            <p class="quotes color-white fs-20s fw-600 font-italic">“Unlocking the endless potential of
+                                your brand through Digital Marketing is the key to outstanding success.”</p>
                         </div>
                     </div>
                 </div>
