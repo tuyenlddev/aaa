@@ -11,6 +11,9 @@
     .main__content {
         margin-left: 200px;
     }
+    .home__content {
+        width: 100%;
+    }
     .home__content--left {
         margin-left: 64px;
     }
